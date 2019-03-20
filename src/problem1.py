@@ -131,7 +131,7 @@ def problem1(circle, rectangle, color, length, window):
     y1 = line1.get_midpoint().y + 0.5*length
     y2 = line1.get_midpoint().y - 0.5*length
 
-    line2 = rg.Line(rg.Point(line1.get_midpoint().x,y1),rg.Point(line1.get_midpoint().x,y2))
+    line2 = rg.Line(rg.Point(line1.get_midpoint().x,y1),rg.Point(line1.get_midpoint().x, y2))
     line2.color = circle.fill_color
     line2.thickness = circle.outline_thickness + rectangle.outline_thickness
     line1.attach_to(window)
